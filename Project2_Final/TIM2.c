@@ -36,8 +36,8 @@ void HW_config(void){
 	
 	///////////////////////////////////////////////////////// 
 	
-	TIM2->PSC = 7999; //prescaler (10kHz, 10us)
-	TIM2->ARR = 199; //auto reload register Period of 20 ms
+	TIM2->PSC = 799; //prescaler (100kHz, 10us)
+	TIM2->ARR = 1999; //auto reload register Period of 20 ms
 	
 	TIM2->CCMR1 = 0;
 	TIM2->CCMR1 |= TIM_CCMR1_OC1M_1 | TIM_CCMR1_OC1M_2; //channel 1 pwm mode output
